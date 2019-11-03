@@ -1,8 +1,12 @@
 const express = require('express')
-const port = 1000
+// const request = require('request')
+const api = require('./server/routes/api')
 const app = express()
-// const mongoose = require('mongoose')
+const port = 1000
+const path = require('path')
 
 
 //===============//
-// app.listen()
+app.listen(port, function () {
+    console.log(`Running server on port ${port}`)
+})
